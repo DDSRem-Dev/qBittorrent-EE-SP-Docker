@@ -24,7 +24,7 @@ jobs:
           Description=$(curl -s \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/DDS-Derek/qBittorrent-EE-SP-Docker | \
+            https://api.github.com/repos/DDSRem-Dev/qBittorrent-EE-SP-Docker | \
             jq -r ".description")
           echo "Description=${Description}"
           echo "Description=${Description}" >> $GITHUB_OUTPUT
